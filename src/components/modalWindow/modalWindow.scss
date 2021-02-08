@@ -1,0 +1,31 @@
+.modal {
+	position: fixed;
+	height: 160px;
+	width: 300px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	display: none;
+	z-index: 10000;
+	input {
+		width: 97%;
+	}
+	div {
+		margin-top: 10px;
+	}
+	&.active {
+		display: block;
+	}
+}
+.modal__btn {
+	display: flex;
+	justify-content: space-between;
+	button {
+		width: 70px;
+		height: 25px;
+		cursor: pointer;
+	}
+}
